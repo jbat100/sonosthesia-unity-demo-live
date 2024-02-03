@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Styles/sonosthesia-list.uss?fileID=7433441132597879392&amp;guid=0f43059e2ae0e4ed4962393ef91b4100&amp;type=3#sonosthesia-list" />
+    <Style src="project://database/Assets/UI/Styles/sonosthesia-main.uss?fileID=7433441132597879392&amp;guid=1e7e44d633b7a4bf9ab6c7c9c10c0409&amp;type=3#sonosthesia-main" />
+    <Style src="project://database/Assets/UI/Styles/sonosthesia-bar.uss?fileID=7433441132597879392&amp;guid=c5500212a3e566748be5a09a07de5ff3&amp;type=3#sonosthesia-bar" />
+    <ui:GroupBox class="list-item panel-background" style="height: 160px; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; flex-grow: 0; flex-direction: column; max-height: 160px; min-height: 160px; background-color: rgb(83, 83, 83); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(217, 217, 217); border-right-color: rgb(217, 217, 217); border-top-color: rgb(217, 217, 217); border-bottom-color: rgb(217, 217, 217);">
+        <ui:Label tabindex="-1" text="Note 127 Velocity 127" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DescriptionLabel" style="margin-top: 0; margin-right: 0; margin-bottom: 9px; margin-left: 0; height: 20px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; color: rgb(255, 255, 255); flex-grow: 0; align-self: stretch; -unity-font-style: bold; -unity-text-align: middle-center; font-size: 13px;" />
+        <ui:GroupBox style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-grow: 1;">
+            <ui:Label tabindex="-1" text="S" parse-escape-sequences="true" display-tooltip-when-elided="true" class="bar-label" />
+            <ui:ProgressBar value="22" high-value="127" name="SlideProgressBar" style="flex-grow: 1; flex-direction: column;" />
+        </ui:GroupBox>
+        <ui:GroupBox style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-grow: 1;">
+            <ui:Label tabindex="-1" text="P" parse-escape-sequences="true" display-tooltip-when-elided="true" class="bar-label" />
+            <ui:ProgressBar value="22" high-value="127" name="PressureProgressBar" style="flex-grow: 1; flex-direction: column;" />
+        </ui:GroupBox>
+        <ui:GroupBox style="flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-grow: 1;">
+            <ui:Label tabindex="-1" text="B" parse-escape-sequences="true" display-tooltip-when-elided="true" class="bar-label" />
+            <ui:ProgressBar value="22" high-value="96" name="BendProgressBar" low-value="0" style="flex-grow: 1; flex-direction: column;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>

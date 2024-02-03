@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6043150772276417174
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1218450494764082880, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _offset.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218450494764082880, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _offset.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1218450494764082880, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _offset.z
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403396428658144616, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _autoEnd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1403396428658144616, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _autoEndDelay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2703236323314525646, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4097320877828652143, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_Name
+      value: MPEXRTriggerKeyboardElement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331192411201928195, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331192411201928195, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331192411201928195, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5486343664195463547, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _originPrefab
+      value: 
+      objectReference: {fileID: 1920636664342884993, guid: bbf91d5f90e54d24ca5bea73b9180e62, type: 3}
+    - target: {fileID: 5486343664195463547, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _targetPrefab
+      value: 
+      objectReference: {fileID: 1920636664342884993, guid: bf27a404dd02832468469e9ed536cf8c, type: 3}
+    - target: {fileID: 5486343664195463547, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: _lineRendererPrefab
+      value: 
+      objectReference: {fileID: -403053538776792211, guid: 1e708839027e3074393c6d285f2d73aa, type: 3}
+    - target: {fileID: 6112610061000913947, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32aaa201cf9e01e48879500aabb1d3e1, type: 3}
