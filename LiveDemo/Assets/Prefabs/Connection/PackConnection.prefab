@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 4922236810828335668}
   - component: {fileID: 6531174724565742228}
   m_Layer: 0
-  m_Name: Connection
+  m_Name: PackConnection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
