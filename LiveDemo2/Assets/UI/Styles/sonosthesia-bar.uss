@@ -1,5 +1,0 @@
-.bar-label {
-    color: rgb(197, 197, 197);
-    -unity-text-align: upper-left;
-    -unity-font-style: bold;
-}
