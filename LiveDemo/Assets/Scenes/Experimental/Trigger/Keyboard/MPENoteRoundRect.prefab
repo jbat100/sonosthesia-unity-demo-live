@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad954164d26d48eaaedafb45eb403200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _source: {fileID: 1888783995468310860}
+  _source: {fileID: 6655883226357177647}
   _processingFactory: {fileID: 0}
   _renderer: {fileID: 4908923827025941824}
   _name: _Color
@@ -179,8 +179,7 @@ GameObject:
   - component: {fileID: 7526150796373959404}
   - component: {fileID: 1894502415917404857}
   - component: {fileID: 3843986130101116010}
-  - component: {fileID: 1888783995468310860}
-  - component: {fileID: 7195089730675020167}
+  - component: {fileID: 6655883226357177647}
   m_Layer: 0
   m_Name: Velocity
   m_TagString: Untagged
@@ -229,8 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84140c186b9e4a3f93942f58c686234e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _offset: 0.3
-  _scale: 1
+  _offset: 1
+  _scale: 4
   _selection: 3
   _normalize: 1
   _bendSemitones: 48
@@ -247,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _log: 0
---- !u!114 &1888783995468310860
+--- !u!114 &6655883226357177647
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -256,27 +255,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5717087005639855373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e7d16d308d84ba0ad98444481399653, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ff3b33ddd5a46ca9cc7318d589fb283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _log: 0
   _source: {fileID: 3843986130101116010}
-  _fader: {fileID: 7195089730675020167}
---- !u!114 &7195089730675020167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5717087005639855373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 542fafe7a30e4e2bb751f5987307fb77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _start: {r: 0.48871806, g: 1, b: 0.36320752, a: 1}
-  _end: {r: 11.508575, g: 23.96863, b: 10.062302, a: 1}
-  _clamp: 1
+  _color: {r: 0.2923935, g: 1, b: 0.17924517, a: 1}
 --- !u!1 &6012140394861884648
 GameObject:
   m_ObjectHideFlags: 0
