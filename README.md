@@ -1,6 +1,8 @@
 # sonosthesia-unity-demo-live
 
-This demo expands the [instrument demo](https://github.com/jbat100/sonosthesia-unity-demo-instrument) to use Max 4 Live devices with the [sonosthesia-daw-connector](https://github.com/jbat100/sonosthesia-daw-connector). It showcases the following [sonosthesia framework](https://github.com/jbat100/sonosthesia-unity-packages) packages:
+This demo expands the [instrument demo](https://github.com/jbat100/sonosthesia-unity-demo-instrument) to use Max 4 Live devices with the [sonosthesia-daw-connector](https://github.com/jbat100/sonosthesia-daw-connector), in particular the [Tri Band](https://github.com/jbat100/sonosthesia-daw-connector/tree/main/m4l) which sends energy levels in three different frequency bands allowing realtime visual feedback in Unity. 
+
+It uses the following [sonosthesia framework](https://github.com/jbat100/sonosthesia-unity-packages) packages:
 
 - [com.sonosthesia.touch](https://github.com/jbat100/sonosthesia-unity-packages/tree/main/packages/com.sonosthesia.touch)
 - [com.sonosthesia.instrument](https://github.com/jbat100/sonosthesia-unity-packages/tree/main/packages/com.sonosthesia.instrument)
