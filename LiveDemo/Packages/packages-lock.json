@@ -128,17 +128,6 @@
       },
       "url": "https://registry.npmjs.com"
     },
-    "com.sonosthesia.rtmidi": {
-      "version": "1.6.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "jp.keijiro.rtmidi": "1.0.4",
-        "com.neuecc.unirx": "7.1.0",
-        "com.sonosthesia.adaptivemidi": "1.6.0"
-      },
-      "url": "https://registry.npmjs.com"
-    },
     "com.sonosthesia.sequencer": {
       "version": "1.6.0",
       "depth": 0,
@@ -486,13 +475,6 @@
         "com.unity.xr.core-utils": "2.1.1"
       },
       "url": "https://packages.unity.com"
-    },
-    "jp.keijiro.rtmidi": {
-      "version": "1.0.4",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://registry.npmjs.com"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

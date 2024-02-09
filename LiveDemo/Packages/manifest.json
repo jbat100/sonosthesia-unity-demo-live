@@ -9,7 +9,6 @@
     "com.sonosthesia.midi": "1.6.0",
     "com.sonosthesia.pack": "1.6.0",
     "com.sonosthesia.processing": "1.6.0",
-    "com.sonosthesia.rtmidi": "1.6.0",
     "com.sonosthesia.sequencer": "1.6.0",
     "com.sonosthesia.signal": "1.6.0",
     "com.sonosthesia.target": "1.6.0",
@@ -65,13 +64,6 @@
       "scopes": [
         "com.neuecc.unirx",
         "com.cysharp.unitask"
-      ]
-    },
-    {
-      "name": "Keijiro",
-      "url": "https://registry.npmjs.com",
-      "scopes": [
-        "jp.keijiro"
       ]
     },
     {
