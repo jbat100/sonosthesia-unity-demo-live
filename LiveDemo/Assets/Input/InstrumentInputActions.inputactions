@@ -1,0 +1,34 @@
+{
+    "name": "InstrumentInputActions",
+    "maps": [
+        {
+            "name": "XRI Instrument Settings",
+            "id": "832a2af4-59ca-4822-80c4-bbd9f1b2a0d5",
+            "actions": [
+                {
+                    "name": "Settings",
+                    "type": "Button",
+                    "id": "ef5fe9e3-a527-439b-880c-370b40e65acd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7f033660-e8dd-45c2-8b9c-05702ce1a989",
+                    "path": "<XRInputV1::Oculus::OculusTouchControllerOpenXR>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Settings",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
