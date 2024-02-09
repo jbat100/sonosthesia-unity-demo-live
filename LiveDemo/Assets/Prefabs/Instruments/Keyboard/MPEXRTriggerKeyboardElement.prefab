@@ -41,7 +41,7 @@ PrefabInstance:
     - target: {fileID: 1403396428658144616, guid: 32aaa201cf9e01e48879500aabb1d3e1,
         type: 3}
       propertyPath: _autoEndDelay
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1775267382355193721, guid: 32aaa201cf9e01e48879500aabb1d3e1,
         type: 3}
