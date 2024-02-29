@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Sonosthesia.MIDI;
 using Sonosthesia.Touch;
 using Sonosthesia.Trigger;
+using Sonosthesia.Utils;
 using UniRx;
 using UnityEngine;
 
@@ -14,9 +15,9 @@ namespace Sonosthesia
 
     public class StringVibrationTriggerMPENoteAffordance : TriggerValueAffordance<MPENote, TriggerSource<MPENote>>
     {
-        [SerializeField] private MPENoteSelector _valueSelector;
+        [SerializeField] private Selector<MPENote> _valueSelector;
         
-        [SerializeField] private MPENoteSelector _timeSelector;
+        [SerializeField] private Selector<MPENote> _timeSelector;
 
         [SerializeField] private List<Triggerable> _triggerables;
 
