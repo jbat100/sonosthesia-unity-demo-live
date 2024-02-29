@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,11 +9,17 @@ namespace Sonosthesia
     /// </summary>
     public class MouseKeyRemote : MonoBehaviour
     {
+        public enum OrientationMode
+        {
+            CameraForward,
+            CameraFlat
+        }
+        
         [SerializeField] private Transform _target;
 
         [SerializeField] private float _scrollSensitivity = 1f;
-        
-        [SerializeField] private Vector3 _normal = Vector3.forward;
+
+        [SerializeField] private OrientationMode _orientationMode;
 
         [SerializeField] private List<float> _distances;
 
@@ -28,6 +33,9 @@ namespace Sonosthesia
         
         private int _distanceIndex;
         private float _distance;
+
+        private Camera _camera;
+        private Camera Camera => _camera ? _camera : (_camera = Camera.main);
 
         private void ResetDistance()
         {
@@ -63,11 +71,18 @@ namespace Sonosthesia
             {
                 ResetDistance();
             }
+
+            Vector3 direction = _orientationMode switch
+            {
+                OrientationMode.CameraForward => Camera.transform.forward,
+                OrientationMode.CameraFlat => Vector3.ProjectOnPlane(Camera.transform.forward, Vector3.up).normalized,
+                _ => Vector3.forward
+            };
             
-            Vector3 origin = transform.position + _distance * _normal.normalized;
+            Vector3 origin = transform.position + _distance * direction;
 
             _planeIndicator.position = origin;
-            _planeIndicator.rotation = Quaternion.LookRotation(_normal, Vector3.up);
+            _planeIndicator.rotation = Quaternion.LookRotation(direction, Vector3.up);
 
             if (!Input.GetMouseButton(0))
             {
@@ -80,8 +95,8 @@ namespace Sonosthesia
                 _distance += Input.mouseScrollDelta.y * _scrollSensitivity;
             }
 
-            Plane plane = new Plane(_normal, origin);
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Plane plane = new Plane(-direction, origin);
+            Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
 
             if (plane.Raycast(ray, out float enter))
             {
