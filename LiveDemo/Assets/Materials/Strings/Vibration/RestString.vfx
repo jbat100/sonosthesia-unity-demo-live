@@ -581,9 +581,9 @@ MonoBehaviour:
   - {fileID: 8926484042661614583}
   - {fileID: 8926484042661614702}
   dataType: 1
-  capacity: 100
+  capacity: 10
   stripCapacity: 1
-  particlePerStripCount: 100
+  particlePerStripCount: 10
   needsComputeBounds: 0
   boundsMode: 1
   m_Space: 0
@@ -697,7 +697,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 100
+      m_SerializableObject: 10
     m_Space: -1
   m_Property:
     name: Count
@@ -927,7 +927,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 100
+      m_SerializableObject: 9
     m_Space: -1
   m_Property:
     name: b
@@ -1792,7 +1792,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614723}
   m_ExposedName: Thickness
   m_Exposed: 1
-  m_Order: 3
+  m_Order: 2
   m_Category: String
   m_Min:
     m_Type:
@@ -1872,7 +1872,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614725}
   m_ExposedName: Pos1
   m_Exposed: 1
-  m_Order: 4
+  m_Order: 3
   m_Category: Endpoints
   m_Min:
     m_Type:
@@ -2054,7 +2054,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614730}
   m_ExposedName: Pos2
   m_Exposed: 1
-  m_Order: 12
+  m_Order: 4
   m_Category: Endpoints
   m_Min:
     m_Type:
@@ -3004,7 +3004,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615724}
   m_ExposedName: Intensity
   m_Exposed: 1
-  m_Order: 2
+  m_Order: 1
   m_Category: String
   m_Min:
     m_Type:

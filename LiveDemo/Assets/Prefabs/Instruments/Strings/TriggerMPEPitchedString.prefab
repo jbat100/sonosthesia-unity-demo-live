@@ -1262,7 +1262,7 @@ MonoBehaviour:
     _valueSelector: {fileID: 0}
     _timeSelector: {fileID: 0}
     _triggerable: {fileID: 7260706739974384204}
-  _restString: {fileID: 4722911871079554697}
+  _restString: {fileID: 0}
   _vibratingString: {fileID: 1288072630650834211}
 --- !u!114 &129497966184084129
 MonoBehaviour:
@@ -1491,7 +1491,7 @@ PrefabInstance:
     - target: {fileID: 7313142826744112294, guid: 50cebf63f7459459e8fd4dd485d20e56,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7313142826744112294, guid: 50cebf63f7459459e8fd4dd485d20e56,
         type: 3}

@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
 using Sonosthesia.MIDI;
 using Sonosthesia.Touch;
 using Sonosthesia.Trigger;
-using Sonosthesia.Utils;
 using UniRx;
 using UnityEngine;
 
@@ -27,9 +25,12 @@ namespace Sonosthesia
 
         protected virtual void Update()
         {
-            bool ongoing = _amplitude.TriggerCount + _offset.TriggerCount + _intensity.TriggerCount > 0;
-            _restString.SetActive(!ongoing);
-            _vibratingString.SetActive(ongoing);
+            if (_restString && _vibratingString)
+            {
+                bool ongoing = _amplitude.TriggerCount + _offset.TriggerCount + _intensity.TriggerCount > 0;
+                _restString.SetActive(!ongoing);
+                _vibratingString.SetActive(ongoing);   
+            }
         }
 
         protected override void HandleStream(Guid id, IObservable<TriggerValueEvent<MPENote>> stream)
