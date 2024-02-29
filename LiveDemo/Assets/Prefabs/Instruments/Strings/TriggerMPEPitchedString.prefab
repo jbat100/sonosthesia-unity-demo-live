@@ -831,7 +831,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4722911871079554697}
   m_Enabled: 1
-  m_Asset: {fileID: 0}
+  m_Asset: {fileID: 8926484042661614526, guid: 1716dc5e695ee42a1bc398d093f82af7, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -1250,12 +1250,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _container: {fileID: -5058107232496260180}
-  _valueSelector: {fileID: 2347167072683012113}
-  _timeSelector: {fileID: 3990352828806393408}
-  _triggerables:
-  - {fileID: 8361610806045074029}
-  - {fileID: 2999328155313493666}
-  - {fileID: 7260706739974384204}
+  _amplitude:
+    _valueSelector: {fileID: 0}
+    _timeSelector: {fileID: 0}
+    _triggerable: {fileID: 8361610806045074029}
+  _offset:
+    _valueSelector: {fileID: 0}
+    _timeSelector: {fileID: 0}
+    _triggerable: {fileID: 2999328155313493666}
+  _intensity:
+    _valueSelector: {fileID: 0}
+    _timeSelector: {fileID: 0}
+    _triggerable: {fileID: 7260706739974384204}
   _restString: {fileID: 4722911871079554697}
   _vibratingString: {fileID: 1288072630650834211}
 --- !u!114 &129497966184084129

@@ -15,26 +15,30 @@ namespace Sonosthesia
 
     public class StringVibrationTriggerMPENoteAffordance : TriggerValueAffordance<MPENote, TriggerSource<MPENote>>
     {
-        [SerializeField] private Selector<MPENote> _valueSelector;
-        
-        [SerializeField] private Selector<MPENote> _timeSelector;
+        [SerializeField] private ValueTriggerable<MPENote> _amplitude;
 
-        [SerializeField] private List<Triggerable> _triggerables;
+        [SerializeField] private ValueTriggerable<MPENote> _offset;
+        
+        [SerializeField] private ValueTriggerable<MPENote> _intensity;
 
         [SerializeField] private GameObject _restString;
 
         [SerializeField] private GameObject _vibratingString;
-        
+
+        protected virtual void Update()
+        {
+            bool ongoing = _amplitude.TriggerCount + _offset.TriggerCount + _intensity.TriggerCount > 0;
+            _restString.SetActive(!ongoing);
+            _vibratingString.SetActive(ongoing);
+        }
+
         protected override void HandleStream(Guid id, IObservable<TriggerValueEvent<MPENote>> stream)
         {
             stream.Take(1).Subscribe(e =>
             {
-                float valueScale = _valueSelector.Select(e.Value);
-                float timeScale = _timeSelector.Select(e.Value);
-                foreach (Triggerable triggerable in _triggerables)
-                {
-                    triggerable.Trigger(valueScale, timeScale);
-                }
+                _amplitude.Trigger(e.Value);
+                _offset.Trigger(e.Value);
+                _intensity.Trigger(e.Value);
             });
         }
     }    
