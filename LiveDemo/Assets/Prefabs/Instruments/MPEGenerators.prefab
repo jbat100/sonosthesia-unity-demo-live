@@ -366,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6082879212374289784}
   m_Layer: 6
-  m_Name: Generators
+  m_Name: MPEGenerators
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
