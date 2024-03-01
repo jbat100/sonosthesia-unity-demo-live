@@ -33,7 +33,7 @@ namespace Sonosthesia
                     _falloff ? _falloff.Select(e.Value) : 1f
                     );
 
-                Vector3 center = e.TriggerData.Actor.transform.position;
+                Vector3 center = e.TriggerData.Source.transform.position;
                 
                 _controller.Trigger(center, scale);
             });
