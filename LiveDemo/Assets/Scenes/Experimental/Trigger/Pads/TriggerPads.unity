@@ -425,6 +425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MIDINotePad4
       objectReference: {fileID: 0}
+    - target: {fileID: 6840581785538631510, guid: 9377a336b1fca4cc3b4c33a84c139a85,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8244897419104788901, guid: 9377a336b1fca4cc3b4c33a84c139a85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -809,6 +814,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MIDINotePad1
       objectReference: {fileID: 0}
+    - target: {fileID: 6840581785538631510, guid: 9377a336b1fca4cc3b4c33a84c139a85,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8244897419104788901, guid: 9377a336b1fca4cc3b4c33a84c139a85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1129,6 +1139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MIDINotePad2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6840581785538631510, guid: 9377a336b1fca4cc3b4c33a84c139a85,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8244897419104788901, guid: 9377a336b1fca4cc3b4c33a84c139a85,
         type: 3}

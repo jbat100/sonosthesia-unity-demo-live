@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Sonosthesia
 {
-    public class PadVibrationTriggerMIDINoteAffordance : TriggerValueAffordance<MIDINote, TriggerSource<MIDINote>>
+    public class PadVibrationTriggerMIDINoteAffordance : TriggerValueAffordance<MIDINote, ValueTriggerEndpoint<MIDINote>>
     {
         [SerializeField] private Selector<MIDINote> _time;
         
