@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _log: 0
+  _distinct: 0
 --- !u!1 &8802641714654882907
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _log: 0
+  _distinct: 0
 --- !u!1 &8810185986697880844
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _log: 0
+  _distinct: 0
 --- !u!1 &9175044010807038267
 GameObject:
   m_ObjectHideFlags: 0
