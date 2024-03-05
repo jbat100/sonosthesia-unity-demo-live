@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,11 +9,17 @@ namespace Sonosthesia
     /// </summary>
     public class MouseKeyRemote : MonoBehaviour
     {
+        public enum OrientationMode
+        {
+            CameraForward,
+            CameraFlat
+        }
+        
         [SerializeField] private Transform _target;
 
         [SerializeField] private float _scrollSensitivity = 1f;
-        
-        [SerializeField] private Vector3 _normal = Vector3.forward;
+
+        [SerializeField] private OrientationMode _orientationMode;
 
         [SerializeField] private List<float> _distances;
 
@@ -22,10 +27,6 @@ namespace Sonosthesia
 
         [SerializeField] private KeyCode _resetDistanceKey = KeyCode.R;
 
-        [SerializeField] private Transform _planeIndicator;
-
-        [SerializeField] private Transform _targetIndicator;
-        
         private int _distanceIndex;
         private float _distance;
 
@@ -64,36 +65,44 @@ namespace Sonosthesia
                 ResetDistance();
             }
             
-            Vector3 origin = transform.position + _distance * _normal.normalized;
-
-            _planeIndicator.position = origin;
-            _planeIndicator.rotation = Quaternion.LookRotation(_normal, Vector3.up);
-
             if (!Input.GetMouseButton(0))
             {
-                _targetIndicator.gameObject.SetActive(false);
                 return;
             }
 
+            Camera camera = Camera.main;
+            
+            Vector3 direction = _orientationMode switch
+            {
+                OrientationMode.CameraForward => camera.transform.forward,
+                OrientationMode.CameraFlat => Vector3.ProjectOnPlane(camera.transform.forward, Vector3.up).normalized,
+                _ => Vector3.forward
+            };
+            
             if (Input.mouseScrollDelta != Vector2.zero)
             {
                 _distance += Input.mouseScrollDelta.y * _scrollSensitivity;
             }
+            
+            //Vector3 origin = Camera.transform.position + _distance * direction;
 
-            Plane plane = new Plane(_normal, origin);
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //Plane plane = new Plane(-direction, origin);
+            
+            //Debug.Log($"{this} computing ray using mouse position {Input.mousePosition}");
+            
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            
+            Debug.DrawRay(ray.origin, ray.direction, Color.blue);
+            
+            _target.position = ray.GetPoint(_distance);
+            
+            // this is not under the mouse, it's driving me insane
 
-            if (plane.Raycast(ray, out float enter))
-            {
-                Vector3 target = ray.GetPoint(enter);
-                _target.position = target;
-                _targetIndicator.gameObject.SetActive(true);
-                _targetIndicator.position = target;
-            }
-            else
-            {
-                _targetIndicator.gameObject.SetActive(false);
-            }
+            //if (plane.Raycast(ray, out float enter))
+            //{
+            //    Vector3 target = ray.GetPoint(enter);
+            //    _target.position = target;
+            //}
         }
     }
     

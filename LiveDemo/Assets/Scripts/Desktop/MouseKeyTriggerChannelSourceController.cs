@@ -5,7 +5,7 @@ namespace Sonosthesia
 {
     public class MouseKeyTriggerChannelSourceController : MonoBehaviour
     {
-        [SerializeField] private BaseTriggerSource _source;
+        [SerializeField] private TriggerEndpoint _source;
 
         [SerializeField] private KeyCode _endAllKeyCode = KeyCode.E;
 
