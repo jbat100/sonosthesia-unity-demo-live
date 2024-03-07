@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98b95b21e094800a180e3702df19674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _portName: IAC Driver Bus 1
+  _portName: loopMIDI Port
   _retryInterval: 1
 --- !u!1 &7351351985352667267
 GameObject:
