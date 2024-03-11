@@ -53,7 +53,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 0.232
     - _WaveIntensity: 0.5
     - _WaveScale: 0.6
     m_Colors:
