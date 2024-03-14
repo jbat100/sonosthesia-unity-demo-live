@@ -8,6 +8,7 @@
     "com.sonosthesia.instrument": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.instrument",
     "com.sonosthesia.interaction": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.interaction",
     "com.sonosthesia.mapping": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.mapping",
+    "com.sonosthesia.mesh": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.mesh",
     "com.sonosthesia.midi": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.midi",
     "com.sonosthesia.pack": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.pack",
     "com.sonosthesia.pointer": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.pointer",

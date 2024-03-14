@@ -119,6 +119,15 @@
         "com.sonosthesia.signal": "1.7.0"
       }
     },
+    "com.sonosthesia.mesh": {
+      "version": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.mesh",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.6",
+        "com.unity.burst": "1.8.4"
+      }
+    },
     "com.sonosthesia.midi": {
       "version": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.midi",
       "depth": 0,
