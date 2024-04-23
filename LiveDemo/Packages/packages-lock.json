@@ -23,16 +23,15 @@
       }
     },
     "com.sonosthesia.arpeggiator": {
-      "version": "1.8.0",
-      "depth": 2,
-      "source": "registry",
+      "version": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.arpeggiator",
+      "depth": 0,
+      "source": "local",
       "dependencies": {
         "com.cysharp.unitask": "2.3.3",
         "com.neuecc.unirx": "7.1.0",
         "com.sonosthesia.utils": "1.8.0",
         "com.sonosthesia.channel": "1.8.0"
-      },
-      "url": "https://registry.npmjs.com"
+      }
     },
     "com.sonosthesia.channel": {
       "version": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.channel",
@@ -234,9 +233,9 @@
       }
     },
     "com.sonosthesia.spawn": {
-      "version": "1.8.0",
-      "depth": 1,
-      "source": "registry",
+      "version": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.spawn",
+      "depth": 0,
+      "source": "local",
       "dependencies": {
         "com.unity.splines": "2.2.1",
         "com.neuecc.unirx": "7.1.0",
@@ -248,8 +247,7 @@
         "com.sonosthesia.arpeggiator": "1.8.0",
         "com.sonosthesia.flow": "1.8.0",
         "com.sonosthesia.sequencer": "1.8.0"
-      },
-      "url": "https://registry.npmjs.com"
+      }
     },
     "com.sonosthesia.target": {
       "version": "file:../../../sonosthesia-unity-packages/packages/com.sonosthesia.target",
