@@ -56,10 +56,10 @@ Material:
     - _NoisePower: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RoughnessMultiplier: 0.615
+    - _RoughnessMultiplier: 0.57
     m_Colors:
     - _MainColor: {r: 0.4719156, g: 0.5536192, b: 0.67295593, a: 0}
-    - _NoiseColor: {r: 0, g: 5.992157, b: 5.4535584, a: 1}
+    - _NoiseColor: {r: 1.8453377, g: 5.484276, b: 2.763782, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &2285125837527664395
 MonoBehaviour:
