@@ -8,7 +8,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.FD7A1EDD" = "ref=\"Assets/Prefabs/Instruments/MIDINoteSource.prefab\""
+	"last_search.FD7A1EDD" = "ref=\"Assets/Prefabs/Instruments/Strings/String.prefab\""
 	"OpenInspectorPreview.FD7A1EDD" = "0"
 	"currentGroup.FD7A1EDD" = "all"
 }

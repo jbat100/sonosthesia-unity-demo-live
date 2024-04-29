@@ -30,56 +30,56 @@ MonoBehaviour:
       _octave: -2
   - _name: Snare1
     _element:
-      _channel: 0
+      _channel: 1
       _note: 4
       _octave: 1
   - _name: Snare2
     _element:
-      _channel: 0
+      _channel: 1
       _note: 11
       _octave: 1
   - _name: Rim1
     _element:
-      _channel: 0
+      _channel: 1
       _note: 7
       _octave: 3
   - _name: Rim2
     _element:
-      _channel: 0
+      _channel: 1
       _note: 0
       _octave: 2
   - _name: HiHat1
     _element:
-      _channel: 0
+      _channel: 2
       _note: 6
       _octave: 7
   - _name: HiHat2
     _element:
-      _channel: 0
+      _channel: 2
       _note: 5
       _octave: 7
   - _name: HiHat3
     _element:
-      _channel: 0
+      _channel: 2
       _note: 4
       _octave: 7
   - _name: HiHat4
     _element:
-      _channel: 0
+      _channel: 2
       _note: 4
       _octave: 8
   - _name: HiHat5
     _element:
-      _channel: 0
+      _channel: 2
       _note: 2
       _octave: 7
   - _name: FX1
     _element:
-      _channel: 0
+      _channel: 1
       _note: 4
       _octave: 3
   - _name: FX2
     _element:
-      _channel: 0
+      _channel: 1
       _note: 5
       _octave: 3

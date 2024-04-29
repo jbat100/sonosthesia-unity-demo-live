@@ -285,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8375759835199907648}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7069847, y: -0, z: 0, w: 0.7072289}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.3, z: -0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -599,13 +599,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8338015102263842159}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2943012903595131692 stripped
+--- !u!114 &2813781335275875813 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -2638763947378174397, guid: 4906b869911bd6b47b9d25327f282ad5,
+  m_CorrespondingSourceObject: {fileID: 6105222723736795274, guid: 4906b869911bd6b47b9d25327f282ad5,
     type: 3}
   m_PrefabInstance: {fileID: 8338015102263842159}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4097320877828652143}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 64f1ab39f2c74c10b703fb0220a91aa0, type: 3}
@@ -629,9 +629,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f3629bcc17e437cacdc7657b56d57ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _domain: 0
+  _node: {fileID: 0}
   _gates:
   - {fileID: 652639652213990133}
-  _driver: {fileID: 2943012903595131692}
+  _driver: {fileID: 2813781335275875813}
   _endOnExit: 1
   _endOnReEnter: 1
   _autoEnd: 0
