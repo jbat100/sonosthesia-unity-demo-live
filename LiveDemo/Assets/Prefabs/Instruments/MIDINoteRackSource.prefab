@@ -80,14 +80,47 @@ MonoBehaviour:
   _order: 1
   _domain: 0
   _extractor:
-    _filter: 0
-    _selector: 0
+    _filter: -1
+    _selector: 1
   _postProcessor:
     _abs: 0
     _scale: 1
     _offset: 0
     _clamp: 0
     _clampRange: {x: 0, y: 0}
+  _postEnvelope:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 8.134697
+      outSlope: 8.134697
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 12.134749
+      value: 98.71251
+      inSlope: 2.3754804
+      outSlope: 2.3754804
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.39466715
+      outWeight: 0.12937158
+    - serializedVersion: 3
+      time: 49.85672
+      value: 127.39937
+      inSlope: 0.15660769
+      outSlope: 0.15660769
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1696532
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5777884647469304645
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +155,54 @@ Transform:
   - {fileID: 4736517293325783079}
   m_Father: {fileID: 6320438506673824739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6917642662621816960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8548218890027461048}
+  - component: {fileID: 5636091826059745254}
+  m_Layer: 6
+  m_Name: Direction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8548218890027461048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917642662621816960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6984817073000504108}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5636091826059745254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6917642662621816960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc81c474cf54e0e9485b213fe6b9a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _direction: {x: 0, y: -1, z: 0}
+  _velocityThreshold: 0
+  _dotThreshold: 0.3
+  _local: 0
 --- !u!1 &7323174741732538024
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +293,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _value: 80
+--- !u!1 &8527108165874943565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6984817073000504108}
+  m_Layer: 6
+  m_Name: Gates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6984817073000504108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527108165874943565}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8548218890027461048}
+  m_Father: {fileID: 6320438506673824739}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8877675914279867664
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +359,7 @@ Transform:
   - {fileID: 3828493988248116366}
   - {fileID: 7020960278436471516}
   - {fileID: 8370603338145543364}
+  - {fileID: 6984817073000504108}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5346353186169239282
@@ -262,7 +376,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _domain: 0
   _node: {fileID: 0}
-  _gates: []
+  _gates:
+  - {fileID: 5636091826059745254}
   _driver: {fileID: 3655133338825295213}
   _endOnExit: 1
   _endOnReEnter: 1
@@ -270,7 +385,7 @@ MonoBehaviour:
   _autoEndDelay: 0.2
   _rackElement: 
   _rackSetup: {fileID: 0}
-  _velocity: {fileID: 1682100626579866942}
+  _velocity: {fileID: 2455761164619064437}
   _pressure: {fileID: 656242508196815784}
 --- !u!54 &8889222223301537972
 Rigidbody:

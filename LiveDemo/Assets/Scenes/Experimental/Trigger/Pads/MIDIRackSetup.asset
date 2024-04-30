@@ -16,12 +16,12 @@ MonoBehaviour:
   - _name: Kick1
     _element:
       _channel: 0
-      _note: 10
+      _note: 11
       _octave: -2
   - _name: Kick2
     _element:
       _channel: 0
-      _note: 11
+      _note: 10
       _octave: -2
   - _name: Kick3
     _element:

@@ -635,10 +635,43 @@ MonoBehaviour:
     _selector: 1
   _postProcessor:
     _abs: 0
-    _scale: 10
+    _scale: 1
     _offset: 0
     _clamp: 0
     _clampRange: {x: 0, y: 0}
+  _postEnvelope:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 10.635807
+      outSlope: 10.635807
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 7.491931
+      value: 79.68273
+      inSlope: 1.5941577
+      outSlope: 1.5941577
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.28776568
+      outWeight: 0.12937158
+    - serializedVersion: 3
+      time: 49.85672
+      value: 127.39937
+      inSlope: 0.15660769
+      outSlope: 0.15660769
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1696532
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3500089759801313937
 GameObject:
   m_ObjectHideFlags: 0

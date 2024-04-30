@@ -155,6 +155,7 @@ Transform:
   - {fileID: 8837291110994906899}
   - {fileID: 7175312636232430178}
   - {fileID: 339742548093722722}
+  - {fileID: 8554470907259061925}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6977864650847397146
@@ -184,12 +185,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _domain: 0
   _node: {fileID: 0}
-  _gates: []
+  _gates:
+  - {fileID: 5021489469030371982}
   _driver: {fileID: 359626046076028671}
   _endOnExit: 1
   _endOnReEnter: 1
-  _autoEnd: 0
-  _autoEndDelay: 0
+  _autoEnd: 1
+  _autoEndDelay: 2
   _channel: {fileID: 5776722510010619564}
   _note: {fileID: 537600921511990461}
   _velocity: {fileID: 7420984821175490952}
@@ -265,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a0870ee94ec491c8e2e3415c0173b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _value: 0
+  _value: 3
 --- !u!1 &1015164552343713288
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,10 +636,43 @@ MonoBehaviour:
     _selector: 1
   _postProcessor:
     _abs: 0
-    _scale: 10
+    _scale: 1
     _offset: 0
     _clamp: 0
     _clampRange: {x: 0, y: 0}
+  _postEnvelope:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 8.134697
+      outSlope: 8.134697
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 12.134749
+      value: 98.71251
+      inSlope: 2.3754804
+      outSlope: 2.3754804
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.39466715
+      outWeight: 0.12937158
+    - serializedVersion: 3
+      time: 49.85672
+      value: 127.39937
+      inSlope: 0.15660769
+      outSlope: 0.15660769
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1696532
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3500089759801313937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1604,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa9fde4236446c2aaa41ad15dc85562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7778003621309223836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8554470907259061925}
+  m_Layer: 6
+  m_Name: Gates
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8554470907259061925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7778003621309223836}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3612446570391096713}
+  m_Father: {fileID: 1585061944044853623}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8260736243058262107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,6 +1685,54 @@ MonoBehaviour:
   _selection: 3
   _normalize: 1
   _bendSemitones: 48
+--- !u!1 &8891330679964718815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3612446570391096713}
+  - component: {fileID: 5021489469030371982}
+  m_Layer: 6
+  m_Name: Direction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3612446570391096713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8891330679964718815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8554470907259061925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5021489469030371982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8891330679964718815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc81c474cf54e0e9485b213fe6b9a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _direction: {x: 0, y: -1, z: 0}
+  _velocityThreshold: 0
+  _dotThreshold: 0.3
+  _local: 0
 --- !u!1001 &7630022553124914274
 PrefabInstance:
   m_ObjectHideFlags: 0

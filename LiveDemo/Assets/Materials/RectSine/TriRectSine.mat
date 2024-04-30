@@ -59,7 +59,7 @@ Material:
     - _Frequency1: 1
     - _Frequency2: 4
     - _Frequency3: 20
-    - _Intensity: -1.53
+    - _Intensity: 1.5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Speed1: 5
