@@ -36,7 +36,16 @@ Note that to add those packages to your Unity project you will need to add the f
   ]
 ```
 
+## MIDI output with hit visuals
+
+Procedural visuals running on the GPU for performance allowing use in XR apps
+
+<p align="center">
+    <img alt="Keyboard Builder" src="https://github.com/jbat100/sonosthesia-unity-demo-live/assets/1318918/2a1deb74-3b2c-40eb-9a37-371e0db165d9" width="75%">
+</p>
+
 ## Audio feedback from Live to Unity
+
 
 <p align="center">
     <img alt="Keyboard Builder" src="https://github.com/jbat100/sonosthesia-unity-demo-live/assets/1318918/7afd6093-199b-4bc8-8d21-d31f93ef32cf" width="75%">
