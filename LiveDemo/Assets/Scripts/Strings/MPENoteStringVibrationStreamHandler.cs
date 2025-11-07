@@ -2,11 +2,10 @@ using System;
 using System.Collections.Generic;
 using Sonosthesia.Channel;
 using Sonosthesia.MIDI;
-using Sonosthesia.Trigger;
 using UniRx;
 using UnityEngine;
 
-namespace Sonosthesia
+namespace Sonosthesia.LiveDemo
 {
     public class MPENoteStringVibrationStreamHandler : StreamHandler<MPENote>
     {
@@ -28,7 +27,7 @@ namespace Sonosthesia
         
         [SerializeField] private MPENoteSelector _timeSelector;
 
-        [SerializeField] private List<Triggerable> _triggerables;
+        [SerializeField] private List<Trigger.Trigger> _triggers;
         
         protected override IDisposable InternalHandleStream(IObservable<MPENote> stream)
         {

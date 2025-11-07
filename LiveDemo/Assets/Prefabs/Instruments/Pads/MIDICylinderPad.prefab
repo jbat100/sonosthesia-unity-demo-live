@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 497446321777406954}
   - component: {fileID: 2297406233076582075}
   m_Layer: 6
-  m_Name: ExtraCollision
+  m_Name: ExtraCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,12 +601,12 @@ GameObject:
   - component: {fileID: 2272324120387586768}
   - component: {fileID: 5789119455485917842}
   m_Layer: 6
-  m_Name: Collision
+  m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8930576142291253691
 Transform:
   m_ObjectHideFlags: 0

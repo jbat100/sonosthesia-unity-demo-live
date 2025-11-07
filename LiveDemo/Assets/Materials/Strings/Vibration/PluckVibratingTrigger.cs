@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Sonosthesia.Generator;
-using Sonosthesia.Trigger;
 using UnityEngine;
 
 namespace Sonosthesia
@@ -34,7 +33,7 @@ namespace Sonosthesia
         
         [SerializeField] private List<GeneratorSignal<float>> _generators;
         
-        [SerializeField] private List<Triggerable> _triggerables;
+        [SerializeField] private List<Trigger.Trigger> _triggers;
         
         public void Trigger()
         {
@@ -46,7 +45,7 @@ namespace Sonosthesia
                 }    
             }
 
-            foreach (Triggerable triggerable in _triggerables)
+            foreach (Trigger.Trigger triggerable in _triggers)
             {
                 triggerable.Trigger(_valueScale, _timeScale);
             }

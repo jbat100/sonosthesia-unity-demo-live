@@ -45,7 +45,7 @@ Material:
     - _Smoothness: 0
     - _Thickness: 0.0172
     m_Colors:
-    - _Color: {r: 2.1763961, g: 5.9921565, b: 2.3126738, a: 0.98039216}
+    - _Color: {r: 1.0881982, g: 2.9960785, b: 1.156337, a: 0.98039216}
     - _Dimensions: {r: 0.7, g: 0.7, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2674430207042346829

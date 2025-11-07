@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _configuration: {fileID: 9096005750494539498}
-  _scale: {x: 0.03, y: 1, z: 0.03}
+  _scale: {x: 0.04, y: 1, z: 0.04}
   _growAxes: 2
   _forwardDirection: 0
   _upDirection: 4
