@@ -1,8 +1,13 @@
-﻿using Sonosthesia.MIDI;
+﻿using Sonosthesia.Instrument;
+using Sonosthesia.MIDI;
+using UnityEngine;
 
 namespace Sonosthesia.LiveDemo
 {
-    public class MIDINoteStringVibrationConfiguration : StringVibrationConfiguration<MIDINote>
+    [CreateAssetMenu(fileName = "MIDINoteStringVibrationConfiguration", 
+        menuName = "Sonosthesia/LiveDemo/MIDINoteStringVibrationConfiguration")]
+    public class MIDINoteStringVibrationConfiguration : 
+        StringVibrationConfiguration<MIDINote, MIDINoteEnvelopeSettings>
     {
         
     }
