@@ -228,10 +228,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b979b64a6be84d82a5a1aaead50707dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _log: 0
   _source: {fileID: 5545085552549195257}
+  _distinct: 1
   _processingFactory: {fileID: 0}
-  _renderer: {fileID: 3713582176687802252}
   _name: _Amplitude1
+  _renderer: {fileID: 3713582176687802252}
+  _renderers: []
+  _group: {fileID: 0}
+  _materialSelector: 1
+  _usePropertyBlock: 0
+  _materialIndex: 0
 --- !u!114 &4238580595032944270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,10 +251,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b979b64a6be84d82a5a1aaead50707dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _log: 0
   _source: {fileID: 2333203450129138083}
+  _distinct: 1
   _processingFactory: {fileID: 0}
-  _renderer: {fileID: 3713582176687802252}
   _name: _Amplitude2
+  _renderer: {fileID: 3713582176687802252}
+  _renderers: []
+  _group: {fileID: 0}
+  _materialSelector: 1
+  _usePropertyBlock: 0
+  _materialIndex: 0
 --- !u!114 &6019185734275536406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,10 +274,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b979b64a6be84d82a5a1aaead50707dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _log: 0
   _source: {fileID: 9042824605858438370}
+  _distinct: 1
   _processingFactory: {fileID: 0}
-  _renderer: {fileID: 3713582176687802252}
   _name: _Amplitude3
+  _renderer: {fileID: 3713582176687802252}
+  _renderers: []
+  _group: {fileID: 0}
+  _materialSelector: 1
+  _usePropertyBlock: 0
+  _materialIndex: 0
 --- !u!4 &6035153529493311503 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7596938984507490049, guid: ae6bbe67ba3bb4e378b3ca95a7d62cae,

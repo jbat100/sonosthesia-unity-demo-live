@@ -28,8 +28,8 @@ namespace Sonosthesia.LiveDemo
                 base.Setup(e);
                 IStringVibrationConfiguration<TEvent> configuration = Affordance._configuration.Value;
                 _amplitude = configuration.Amplitude.StartSession(e, Affordance._amplitude.TriggerController);
-                _offset = configuration.Amplitude.StartSession(e, Affordance._offset.TriggerController);
-                _intensity = configuration.Amplitude.StartSession(e, Affordance._intensity.TriggerController);
+                _offset = configuration.Offset.StartSession(e, Affordance._offset.TriggerController);
+                _intensity = configuration.Intensity.StartSession(e, Affordance._intensity.TriggerController);
             }
             
             protected override void Update(TEvent e)
