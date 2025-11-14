@@ -10,7 +10,7 @@ namespace Sonosthesia.LiveDemo
         IInteractiveEnvelopeSettings<TEvent> Intensity { get; }
     }
     
-    public class StringVibrationConfiguration<TEvent, TEnvelope> : ScriptableObject 
+    public class StringVibrationConfiguration<TEvent, TEnvelope> : ScriptableObject, IStringVibrationConfiguration<TEvent>
         where TEvent : struct where TEnvelope : IInteractiveEnvelopeSettings<TEvent>  
     {
         [SerializeField] private TEnvelope _intensity;

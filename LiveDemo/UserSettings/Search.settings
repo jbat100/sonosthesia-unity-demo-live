@@ -1,5 +1,6 @@
 trackSelection = true
 refreshSearchWindowsInPlayMode = false
+pickerAdvancedUI = false
 fetchPreview = true
 defaultFlags = 0
 keepOpen = false
@@ -11,6 +12,10 @@ scopes = {
 	"last_search.FD7A1EDD" = "ref=\"Assets/Prefabs/Instruments/Strings/String.prefab\""
 	"OpenInspectorPreview.FD7A1EDD" = "0"
 	"currentGroup.FD7A1EDD" = "all"
+	"picker_window_position_offset.00000000" = "302.6667;482.6667;320;550"
+	"picker_visibility_flags.00000000" = "0"
+	"picker_item_size.00000000" = "32"
+	"picker_inspector.00000000" = "0"
 }
 providers = {
 	log = {
@@ -58,6 +63,11 @@ providers = {
 		priority = 90
 		defaultAction = null
 	}
+	presets_provider = {
+		active = false
+		priority = -10
+		defaultAction = null
+	}
 }
 objectSelectors = {
 }
@@ -76,3 +86,4 @@ helperWidgetCurrentArea = "all"
 disabledIndexers = ""
 minIndexVariations = 2
 findProviderIndexHelper = true
+itemIconSize = 32
