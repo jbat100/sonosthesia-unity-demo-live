@@ -177,7 +177,7 @@ MonoBehaviour:
     _oneEuroFilter:
       _beta: 0.1
       _minCutoff: 0.1
-    _interaction: 1
+    _interaction: 2
     _valueScaleExtractor:
       _processor:
         _processing: 0

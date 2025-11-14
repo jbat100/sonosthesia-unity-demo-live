@@ -53,12 +53,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amplitude1: 0.285
+    - _Amplitude1: 0.161
     - _Amplitude2: 0.047
-    - _Amplitude3: 0
-    - _Angle: 0
+    - _Amplitude3: 0.117
+    - _Angle: 0.75
     - _Frequency: 4
-    - _Frequency1: 0
+    - _Frequency1: 2.7
     - _Frequency2: 4
     - _Frequency3: 15
     - _Height: 0.53
