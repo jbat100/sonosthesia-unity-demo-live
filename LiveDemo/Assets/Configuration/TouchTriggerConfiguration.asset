@@ -54,7 +54,7 @@ MonoBehaviour:
         underlyingValue: {fileID: 0}
       _followStrategy: 0
       _constantValue: 0
-      _extractorType: 1
+      _extractorType: 2
       _velocityType: 0
       _axes: 7
       _actorModulationType: 0
@@ -167,6 +167,6 @@ MonoBehaviour:
         underlyingValue: {fileID: 0}
       _constantValue: 0
       _velocityType: 0
-      _axes: 7
+      _axes: -1
       _extractorType: 1
     _releaseType: 14
