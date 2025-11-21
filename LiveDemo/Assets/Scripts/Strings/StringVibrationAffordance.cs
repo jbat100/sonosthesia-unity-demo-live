@@ -2,6 +2,7 @@
 using Sonosthesia.Interaction;
 using Sonosthesia.Trigger;
 using Sonosthesia.Utils;
+using UniRx;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -40,14 +41,23 @@ namespace Sonosthesia.LiveDemo
             base.OnEnable();
         }
 
+        protected override void OnDisable()
+        {
+            _amplitudeController.Dispose();
+            _offsetController.Dispose();
+            _intensityController.Dispose();
+            
+            base.OnDisable();
+        }
+
         protected virtual void Update()
         {
-            _visualEffect.SetFloat(_amplitudeID, _amplitudeController.Update());
-            _visualEffect.SetFloat(_offsetID, _offsetController.Update());
-            _visualEffect.SetFloat(_intensityID, _intensityController.Update());
+            _visualEffect.SetFloat(_amplitudeID, _amplitudeController.Evaluate());
+            _visualEffect.SetFloat(_offsetID, _offsetController.Evaluate());
+            _visualEffect.SetFloat(_intensityID, _intensityController.Evaluate());
         }
         
-        private class Controller : AffordanceController<TEvent, StringVibrationAffordance<TEvent>>
+        private class Controller : AffordanceController<TEvent, StringVibrationAffordance<TEvent>>, IDisposable
         {
             private IInteractiveEnvelopeSession<TEvent> _amplitude;
             private IInteractiveEnvelopeSession<TEvent> _offset;
@@ -77,9 +87,18 @@ namespace Sonosthesia.LiveDemo
             protected override void Teardown(TEvent e)
             {
                 base.Teardown(e);
-                _amplitude.End(e, out float _);
-                _offset.End(e, out float _);
-                _intensity.End(e, out float _);
+                _amplitude.End(e, out float amplitudeRelease);
+                _offset.End(e, out float offsetRelease);
+                _intensity.End(e, out float intensityRelease);
+                Observable.Timer(TimeSpan.FromSeconds(Mathf.Max(amplitudeRelease, offsetRelease, intensityRelease)))
+                    .Subscribe(_ => Dispose());
+            }
+
+            public void Dispose()
+            {
+                _amplitude?.Dispose();
+                _offset?.Dispose();
+                _intensity?.Dispose();
             }
         }
 
