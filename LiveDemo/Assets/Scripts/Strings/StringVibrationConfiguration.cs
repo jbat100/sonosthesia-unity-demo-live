@@ -5,22 +5,22 @@ namespace Sonosthesia.LiveDemo
 {
     public interface IStringVibrationConfiguration<in TEvent> where TEvent : struct
     {
-        IInteractiveEnvelopeSettings<TEvent> Amplitude { get; }
-        IInteractiveEnvelopeSettings<TEvent> Offset { get; }
-        IInteractiveEnvelopeSettings<TEvent> Intensity { get; }
+        IInteractiveTriggerSettings<TEvent> Amplitude { get; }
+        IInteractiveTriggerSettings<TEvent> Offset { get; }
+        IInteractiveTriggerSettings<TEvent> Intensity { get; }
     }
     
-    public class StringVibrationConfiguration<TEvent, TEnvelope> : ScriptableObject, IStringVibrationConfiguration<TEvent>
-        where TEvent : struct where TEnvelope : IInteractiveEnvelopeSettings<TEvent>  
+    public class StringVibrationConfiguration<TEvent, TTrigger> : ScriptableObject, IStringVibrationConfiguration<TEvent>
+        where TEvent : struct where TTrigger : IInteractiveTriggerSettings<TEvent>  
     {
-        [SerializeField] private TEnvelope _intensity;
-        public IInteractiveEnvelopeSettings<TEvent> Intensity => _intensity;
+        [SerializeField] private TTrigger _intensity;
+        public IInteractiveTriggerSettings<TEvent> Intensity => _intensity;
         
-        [SerializeField] private TEnvelope _amplitude;
-        public IInteractiveEnvelopeSettings<TEvent> Amplitude => _amplitude;
+        [SerializeField] private TTrigger _amplitude;
+        public IInteractiveTriggerSettings<TEvent> Amplitude => _amplitude;
 
-        [SerializeField] private TEnvelope _offset;
-        public IInteractiveEnvelopeSettings<TEvent> Offset => _offset;
-        
+        [SerializeField] private TTrigger _offset;
+        public IInteractiveTriggerSettings<TEvent> Offset => _offset;
     }
+    
 }
