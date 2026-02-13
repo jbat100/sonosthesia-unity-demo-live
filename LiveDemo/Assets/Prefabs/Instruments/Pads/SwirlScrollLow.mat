@@ -49,6 +49,7 @@ Material:
     - _CastShadows: 0
     - _Cull: 0
     - _DstBlend: 10
+    - _DstBlendAlpha: 10
     - _Fade: 0.5
     - _Intensity: 3.31
     - _Length: 2
@@ -57,6 +58,7 @@ Material:
     - _QueueOffset: 0
     - _ScrollTime: 30.33
     - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
     - _Surface: 1
     - _Titling: 2.05
     - _Transition: 0.13
